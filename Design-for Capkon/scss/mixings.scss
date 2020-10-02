@@ -1,0 +1,36 @@
+@mixin flex($display,$flexdirection,$justifycontent,$alignitems){
+  display: $display;
+  flex-direction: $flexdirection;
+  justify-content: $justifycontent;
+  align-items: $alignitems;
+}
+
+
+@mixin font($size,$weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin img-boxshadow(){
+  -webkit-box-shadow: 0 2px 9px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.08);
+}
+@mixin form-background(){
+  background: #c20436;
+background: -moz-linear-gradient(left, #c20436 0%, #4f348c 100%);
+background: -webkit-linear-gradient(left, #c20436 0%,#4f348c 100%);
+background: linear-gradient(to right, #c20436 0%,#4f348c 100%);
+}
+
+
+@mixin mobile{
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}

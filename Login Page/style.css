@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    font-style: normal;
+font-weight: bold;
+color: #FFFFFF;
+}
+
+.wrapper{
+    height:100vh;
+    max-width: 100%;
+    background-image: url('./images/download.jpeg');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.wrapper h2{
+    color:black;
+}
+.wrapper .login-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 80.32%, #E12727 80.33%);
+    box-shadow: 7px 7px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 3rem;
+    margin:25px 20px 40px 20px;
+    font-family: Poppins;
+font-size: 24px;
+
+animation: lock 0.8s;
+
+animation-timing-function: linear;
+
+}
+
+.wrapper .login-card input{
+padding:1rem;
+width:300px;
+background: #FFFFFF;
+box-shadow: 2px 5px 4px 4px rgba(0, 0, 0, 0.3);
+border-radius: 50px;
+border:none;
+outline: none;
+margin:10px;
+color:black;
+}
+
+.wrapper .login-card button{
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.96), rgba(255, 0, 0, 0.96));
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+border-radius: 60px;
+width: 200px;
+height: 55px;
+margin: 20px 0px 0px 40px;
+border:none;
+font-size: 16px;
+transition:transform 0.1s linear;
+}
+.wrapper .login-card button:hover{
+    cursor: pointer;
+    transform:scale(1.03)}
+
+@keyframes lock{
+    0%{
+        background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 38.32%, #E12727 38.33%);
+    }
+    10%{
+        background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 42.32%, #E12727 42.33%);
+    }
+    20%{
+        background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 46.08%, #E12727 46.15%);
+    }
+    30%{ background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 50.09%, #E12727 50.21%);}
+    40%{ background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 54.09%, #E12727 54.21%);}
+    50%{
+        background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 58.09%, #E12727 58.21%);
+    }
+    60%{
+        background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 62.09%, #E12727 62.21%);
+    }
+    70%{
+        background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 66.32.6%, #E12727 66.8%);
+    }
+    80%{ background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 70.09%, #E12727 70.21%);}
+    90%{ background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 75.09%, #E12727 75.21%);}
+    100%{
+        background: linear-gradient(122.39deg, #F52626 37.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 80.32%, #E12727 80.33%);
+    }
+}
+
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  
+ .wrapper{
+     background-image: none;
+     justify-content: flex-start;
+     padding: 1rem;
+ }
+  .wrapper  .login-card{
+     
+   
+        background: linear-gradient(122.39deg, #F52626 43.66%, rgba(255, 255, 255, 0) 37.67%, rgba(255, 255, 255, 0) 80.32%, #E12727 80.33%);
+    }
+    .wrapper .login-card input{
+        width:200px;
+    }
+    .wrapper .login-card button{
+        width: 170px;
+    margin: 20px 0px 0px 0px;
+    }
+  }
+
+/* 
+
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper{
+        padding: 20px;
+        justify-content: flex-start;
+        background-image: none;
+    }
+    
+
+
+}
+  
+   
+  

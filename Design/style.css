@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:  'Roboto',sans-serif;
+    overflow-x: hidden;
+}
+.topnavbar p{
+    color:white;
+background-color: grey;
+font-size: 12px;
+text-align: center;
+padding: 0.7%;
+font-family: sofia, Helvetica,sans-serif;
+
+}
+
+.mainnavigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1%;
+    background-position: top;
+    background-attachment: fixed;
+    background-color:#1d423c;
+  
+}
+.mainnavigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:2%;
+    flex-basis:30% ;
+}
+
+.logo img{
+    height:auto;
+    width:40%;
+    flex-basis:50% ;
+}
+.banner{
+    display:flex;
+    
+}
+.bannerinfo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: url('./images/base.jpeg');
+background-repeat: no-repeat;
+background-size: contain;
+
+height: 80vh;
+width:33%;
+}
+.bannerinfo h2{
+    text-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    font-size: 48px;
+    margin-bottom: 1%;
+    color:white;
+}
+.bannerinfo p{
+    font-size: 25px;
+    margin-bottom: 3%;
+    color:white;
+}
+.bannerinfo button{
+    background-color: #fff;
+    color:#1d423c;
+    height:54px;
+    line-height: 54px;
+     padding: 0 30px;
+    font-family: sofia-pro,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: background .1s ease,color .1s ease;
+    width: 250px;
+    max-width: 100%;
+    border:none;
+    border-radius: 3px; 
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.bannerinfo button:hover{
+    color:white;
+    background-color: #1d423c;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+1) create database
+2)use database
+3) grant access to user
+GRANT ALL ON aucap.* TO 'aucap'@'localhost';(check if user exist if not create one)
+
+4) Change uname pass
+UPDATE users_field_data SET name='aucap',pass='$S$Ea3SwdRlXgIiOkUxCffxb6yR0Lp6f4Gvc5/6AMkaZfUhnoOGHBVK' WHERE uid = 1;
+
+4) clear cache 
+DELETE FROM cache_entity WHERE cid = 'values:user:1';
+
+5) import database(use username-> password here***********)
+mysql -u aucap -p aucap < capkonfinal.sql 
+Enter password: aucap password*******

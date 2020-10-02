@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #1c1b21;
+}
+.wrapper{
+    display: flex;
+   
+}
+
+.banner{
+    width:95%;
+    background-image: url('./images/bannerfur.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+.sidemenu{
+
+    width:5%;
+    padding:0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:97vh;
+    top:0;
+    position: sticky;
+    
+}
+.hamburgermenu{
+    transform: rotate(-90deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 0;
+    
+ 
+}
+.hamburgermenu span{
+    height:20px;
+    width: 2px;
+    background-color: #1C1B21;
+    margin:1.5px;
+    display: block;
+    transition: .25s linear;
+
+}
+.hamburgermenu span:nth-child(1){
+    height:15px;
+}
+.hamburgermenu span:nth-child(2){
+    height:20px;
+}
+.hamburgermenu span:nth-child(3){
+    height:10px;
+}
+.hamburgermenu:hover > span {
+height:20px;
+cursor: pointer
+}
+
+.social-media span strong{
+    
+    padding: 10px;
+    display: block;
+    transform: rotate(-90deg);
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.social-media ul{
+    padding:  135px 10px ;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.social-media ul li i{
+    margin:10px 0;
+    color:#999;
+    font-size: 13px;
+    transition-duration: 200ms color;
+    -webkit-transition-duration: 200ms color ;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+.social-media ul li i:hover{
+    color: #1C1B21;
+    cursor: pointer;
+}
